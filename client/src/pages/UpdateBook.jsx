@@ -47,7 +47,7 @@ const UpdateBook = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.put(`https://bookstore-server-po8m.onrender.com/api/v1/update/${id}`, {
+      const res = await axios.put(`https://mernnew-backend.onrender.com/api/v1/update/${id}`, {
         title,
         genre,
         author,
