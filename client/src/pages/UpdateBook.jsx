@@ -21,7 +21,7 @@ const UpdateBook = () => {
     const fetchBook = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(`https://bookstore-server-po8m.onrender.com/api/v1/book/${id}`);
+        const res = await axios.get(`https://mernnew-backend.onrender.com/api/v1/book/${id}`);
         const { title, genre, author, year, pages, publisher } = res.data.data;
         setTitle(title);
         setGenre(genre);
